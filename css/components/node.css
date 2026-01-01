@@ -1,0 +1,334 @@
+.text-content
+{color:--text !importantP;}
+.more-link
+{color:#ffe4c4 !important;}
+.mobile-nav-button__label
+{color: #fff !important;}
+
+blockquote::after
+{    background: #198cc5f7 !important;}
+
+.card__inner
+{    background: #242053 !important;
+color:#fff !important;
+    align-items: stretch !important;
+}
+
+.card__content  {    min-height: 380px !important;}
+
+.field--tags__label {
+  text-transform: uppercase;
+}
+figcaption, .tabled .tabled__navigation
+{
+background: #0000001c !important;
+color:#faebd7 !important;
+font-weight: bolder !important;
+font-size: 1.2rem  !important;
+}
+
+div.fieldset__wrapper, .node, #main
+
+{
+background-color:#150c25 !important;
+border: 0;
+}
+
+.fieldset, .node__content
+
+{
+border: 0px transparent !important;
+min-width: 100%;
+width: 100%;
+max-width: 100%;
+background-color: transparent !important;
+}
+
+.fieldset__legend
+{background-color: #1e1437 !important;}
+
+ pre[class*=language-]
+ {
+background-color: #0f162f;
+box-shadow: -1px -1px 20px 8px #404485;
+
+ }
+ 
+ @supports (box-shadow:none) {
+    .text-content a:where(:not(.button)):hover, .cke_editable a:where(:not(.button)):hover {
+         box-shadow: inset 0 -2em 0 0 #373a87;
+         color:#fff;
+    }
+}
+
+@supports (box-shadow:none) {
+    .text-content a:where(:not(.button)), .cke_editable a:where(:not(.button)) {
+color:antiquewhite;    
+}
+
+.node--unpublished{
+    background-color: #ffdd0069 !important;
+}
+}
+
+:is(.text-content table,.views-table,.draggable-table) th
+{
+color: #faebd7 !important;
+}
+.tabled__caption
+{font-weight: bolder;}
+
+button.tabled__previous, .table
+{
+    background-color: #0000001c  !important;
+    color:bisque !important;
+}
+button.tabled__next
+{
+    background-color: #0000001c  !important;
+    color:bisque !important;
+}
+table {
+--bs-body-bg: #0000001c;
+color: # !important;
+}
+    
+.table>:not(caption)>*>* {color: #e3d3fff3; !important} 
+
+.node--view-mode-full .field--tags
+{background: #1c1235 !important;}
+
+/* Wählt das img-Tag, das sich im div-Element mit der angegebenen Klasse befindet */
+.field.field--name-user-picture.field--type-image.field--label-hidden.field__item img {
+    border-radius: 50%; /* Rundet das Bild zu einem Kreis/Oval */
+    width: 160px;      /* Setzt die Breite des Bildes */
+    /* Optional: Fügen Sie eine feste Höhe hinzu, um sicherzustellen, dass es ein perfekter Kreis wird (falls das Seitenverhältnis nicht 1:1 ist) */
+    /* height: 160px; */
+    /* Optional: Stellen Sie sicher, dass das Bild den Container ausfüllt und nicht verzerrt wird */
+    /* object-fit: cover; */
+  padding: 5px;
+  box-shadow: 1px 1px 5px;
+}   
+
+.field--tags__item a {
+color:#673AB7 !important;
+
+}
+
+/* =========================================
+   Custom Content Boxen (Glassmorphism)
+   ========================================= */
+
+/* --- 1. KEY FACTS BOX (Cyan/Blau) --- */
+.keyfacts-box {
+    /* Basis: Dunkles Milchglas */
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    
+    /* Der "Sharpening"-Effekt: Linker Rand in Cyan */
+    border-left: 5px solid #06b6d4; 
+    
+    /* Subtiler Rahmen für 3D-Effekt */
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0 8px 8px 0; /* Nur rechts abgerundet */
+    
+    /* Layout */
+    padding: 20px 25px;
+    margin: 2.5rem 0;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+    
+    /* Textfarbe: Helles Grau-Blau für gute Lesbarkeit */
+    color: #e2e8f0; 
+}
+
+/* Icon Styling */
+.keyfacts-icon {
+    font-size: 2.2rem;
+    line-height: 1;
+    flex-shrink: 0; /* Verhindert Quetschen auf Mobile */
+    text-shadow: 0 0 15px rgba(6, 182, 212, 0.6); /* Cyan Glow */
+}
+
+/* Überschrift */
+.keyfacts-content h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #06b6d4; /* Cyan passend zum Rand */
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Fließtext */
+.keyfacts-content p {
+    margin: 0;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #cbd5e1;
+}
+
+
+/* --- 2. READ MORE BOX (Smaragd-Grün) --- */
+.read-more-box {
+    /* Basis wie oben */
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    
+    /* Farbe: Smaragd-Grün */
+    border-left: 5px solid #10b981; 
+    
+    /* Rahmen */
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0 8px 8px 0;
+    
+    /* Layout */
+    padding: 20px 25px;
+    margin: 3rem 0 1rem 0;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+    color: #e2e8f0;
+}
+
+/* Icon Styling */
+.read-more-icon {
+    font-size: 2.2rem;
+    line-height: 1;
+    flex-shrink: 0;
+    text-shadow: 0 0 15px rgba(16, 185, 129, 0.6); /* Grüner Glow */
+}
+
+/* Überschrift */
+.read-more-content h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #10b981; /* Grün passend zum Rand */
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Listen-Styling (Clean Up) */
+.read-more-content ul {
+    margin: 0;
+    padding-left: 1.5rem;
+    list-style-type: none;
+}
+
+.read-more-content li {
+    margin-bottom: 0.6rem;
+    position: relative;
+    line-height: 1.5;
+    color: #cbd5e1; /* Helles Grau, NICHT grün */
+}
+
+/* Custom Bullet-Points (Pfeile) */
+.read-more-content li::before {
+    content: "→";
+    color: #10b981; /* Nur der Pfeil ist grün */
+    position: absolute;
+    left: -1.5rem;
+    font-weight: bold;
+}
+
+/* Link-Styling (Lesbarkeit Update) */
+.read-more-content a {
+    color: #f1f5f9; /* Fast Weiß */
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(16, 185, 129, 0.5); /* Zarte grüne Linie */
+    transition: all 0.2s ease;
+}
+
+/* Hover Effekt */
+.read-more-content a:hover {
+    color: #10b981; /* Text wird grün beim Hover */
+    border-bottom-color: #10b981;
+    background: rgba(16, 185, 129, 0.1); /* Zarter grüner Hintergrund */
+}
+
+.page-title 
+{color: #ffb359 !importent;}
+
+block-drupaltv-page-title > h1, .card__title {color: #ffb359 !important;}
+    
+figure,
+{background:transparent !important;}
+
+.text-content, .cke_editable. .ck-content {
+    color:var(--text) !important;
+font-size : 14pt;
+font-weight:760;
+}
+
+
+div.fieldset__wrapper, .node, #main
+
+{
+background-color:#150c25 !important;
+border: 0;
+}
+
+.fieldset, .node__content
+
+{
+border: 0px transparent !important;
+min-width: 100%;
+width: 100%;
+max-width: 100%;
+background-color: transparent !important;
+}
+
+.fieldset__legend
+{background-color: #1e1437 !important;}
+
+ pre[class*=language-]
+ {
+background-color: #0f162f;
+box-shadow: -1px -1px 20px 8px #404485;
+
+ }
+ 
+ @supports (box-shadow:none) {
+    .text-content a:where(:not(.button)):hover, .cke_editable a:where(:not(.button)):hover {
+         box-shadow: inset 0 -2em 0 0 #373a87;
+         color:#fff;
+    }
+}
+
+@supports (box-shadow:none) {
+    .text-content a:where(:not(.button)), .cke_editable a:where(:not(.button)) {
+color:antiquewhite;    
+}
+
+.node--unpublished{
+    background-color: #ffdd0069 !important;
+}
+}
+
+fieldset__label, .fieldset--group{
+color: #f0f8ff !important}
+
+a {
+    color: #fff;
+    &:hover {
+        color: #5d6499;
+    }
+
+    &:focus {
+        outline: solid 2px currentColor;
+        outline-offset: 2px;
+    }
+}

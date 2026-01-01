@@ -1,0 +1,31 @@
+/*
+ * Utility CSS classes.
+ */
+
+.visually-hidden:not(.skip-link) {
+  /* Necessary to override Olivero's specificity. */
+  width: 1px !important;
+}
+
+.tabs {
+
+    --tabs-background-color: transparent !important;
+    --tabs-background-color-hover:#1e1437 !important;
+    --tabs-text-color-active:#fff !important;
+    --tabs-text-color: rgb(162 162 255) !important;
+    --tabs-border-width: 0px !important;
+}
+
+
+div.info {
+  /* Vordergrundfarbe (Textfarbe) */
+  color: blue; 
+
+  /* Hintergrundfarbe */
+  background-color: black; 
+
+  /* Außenabstand (Abstand zu anderen Elementen) */
+  margin: 20px;
+}
+
+

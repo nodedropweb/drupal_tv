@@ -1,0 +1,85 @@
+/*Farbwerte*/
+:root {
+  /* Hier kommen die globalen Variablen rein */
+
+--color--primary: #fff;
+--ck-content-font-color:#dde1ff;
+--text: #dde1ff;
+--card-subtitle: #ffe4c4;
+--color-text-neutral-loud:#dde1ff;
+--color-text-primary-medium:  #faebd7 !important;
+--color-text-neutral-loud: #FBBF24 !important;
+}
+
+
+
+body {
+  hyphens: none;
+}
+
+
+
+/* Beispiel für den gesamten Body */
+body {
+  /* 1. Firefox & neue Standard-Unterstützung */
+  scrollbar-color: #2b2b58 #001031; 
+  scrollbar-width: thin; 
+}
+
+/* 2. WebKit-Browser (Chrome, Safari, Edge) */
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #001031;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #2b2b58;
+  border-radius: 5px; /* Optional: leicht abgerundet */
+}
+
+/*Navigation Toggle fix*/
+.mobile-nav-button__icon,.mobile-nav-button__icon:before,.mobile-nav-button__icon:after
+{
+    border-top: solid 3px #fff !important;
+}
+
+.header-nav {
+ padding-inline-end:var(--sp);border-block-start: solid transparent calc(var(--sp3) + var(--drupal-displace-offset-top, 0px)) !important;
+ }
+.sticky-header-toggle
+{ background-color: #3f426d;}
+.header-nav
+    {
+        background-color:transparent !important;
+    }
+.primary-nav__menu-link
+{color: #fff !important;}
+
+.breadcrumb__link {
+    color:#a6a8d1 !important;
+}
+.site-branding__slogan
+    {color: #989bcf !important;}
+
+.site-footer {
+        border-inline-start: solid #1e283c;
+        background-color: #1e283c;
+    }
+        body:not(.is-always-mobile-nav) .site-footer {
+        border-inline-start: solid #1e283c;
+    }
+
+
+
+.node--view-mode-full .field--tags {
+    background: #232151  !important;}
+
+
+.secondary-nav__menu-link
+{color:#deb887 !important;}
+
+.breadcrumb__item
+{color: rgb(102 191 237) !important;}

@@ -1,0 +1,112 @@
+/**
+ * @file
+ * Miscellaneous fixes.
+ */
+
+ /* Fix Gin admin theme applying negative margin. */
+.tabs-wrapper[class] {
+  margin-inline: 0;
+}
+
+
+/*Implementing base color scheme with gradiant*/
+
+.header-nav, span.button, a.button, body, .site-header__initial, .site-header__inner, .social-bar, #header, .page-wrapper, input, [type="color"],[type="date"],[type="datetime-local"],[type="email"],[type="file"],[type="month"],[type="number"],[type="password"],[type="search"],[type="tel"],[type="text"],[type="time"],[type="url"],[type="week"],textarea  {
+ 
+background: -webkit-linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, #181831 35%, #2b2b58 91%) !important;
+background: -moz-linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(24, 24, 49, 1) 35%, rgba(43, 43, 88, 1) 91%) !important;
+background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(24, 24, 49, 1) 35%, rgba(43, 43, 88, 1) 91%) !important;
+filter: progid:DXImageTransform.Microsoft.gradient(
+  startColorstr="#000000",
+  endColorstr="#2B2B58",
+  GradientType=1
+);
+border: 0 !important;
+}
+.ctacontainer-fluid {
+    margin: 0 !important;
+    background-color: transparent;
+    height: 720px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.ctaouter-wrapper {
+    overflow: hidden;
+    width: 90%;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: 0px 6px 58px 2px #111219;
+    // background-color: #131212 ;
+}
+
+.ctawrapper {
+    width: auto;
+    height: 800px;
+    
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABBoAAAK9CAIAAAAFd5hkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAGYktHRAD/AP8A/6C9p5MAAAABb3JOVAHPoneaAACAAElEQVR42uz9TZMsSZYdiJ17r6qZu0e89/KrqrpRPQCI5gg4wxFwSQq55YL8A9zyd/GvUCAy3HFB4YYQgoIBBo1GdXdVdVVmvo8IdzdTvfdwoWbmFu4e8V5WVmZld/uVlJR47mZqamqq5no/zjmy61+nlCICAFRICiEiFAAgiQtbPrz67dpE5OVjRORqUyKy/kpV31g3DMNe2T4nSfJq+5dtkkwptVPWX62vcnmDT9oJkjQzMyMZEUs3ACgAYPo2BlX9719/+Df/5t/8H//ym88///z+fnt3d3eXezOT8ng8HgFsNpuqGzOLenT3GN8dj8eIYmZmmaCgkqxOd2+NTzfb+sZxHEfxkaTDSynv39d37>
+    background-size: cover;
+    padding: 3rem;  
+    animation-name: slider;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    // border: 1px solid white;
+
+  .ctah1 {
+        text-align: right;
+        color: #e7e7e7;
+        font-size: 2rem;
+        margin-top: 2rem;
+        // padding: 3rem;
+    }
+
+   ctahr {
+        height: 2px;
+        width: 20%;
+        border: none;
+        display: block;
+        margin-right: 0;
+        background-color: #ff430a;
+    }
+
+.ctap {
+        padding-left: 3rem;
+        text-align: justify;     
+        color: #b3b2b2;
+    }
+.ctabutton {
+        background-color: transparent;
+        border: 2px solid #ff430a;
+        padding: 10px;
+        color: #ff430a;
+        font-size: 1.5rem;
+        border-radius: 3px;
+        float: right;
+        width: 45%;
+    }
+
+   .ctabutton:focus {
+        box-shadow: none;
+        outline: none;
+    }
+}
+
+@keyframes slider {
+    from {
+        // width: 0;
+        right: -1090px;
+    }
+    to {
+        // width: 1090px;;
+        right: 0;
+    }
+}
+
+
+

@@ -1,0 +1,92 @@
+body {
+  hyphens: none;
+}
+
+:root {
+  /* Additional gray to ensure contrast on the light gray background */
+  --color--gray-40: hsl(var(--color--gray-hue), var(--color--gray-saturation), 40%);
+}
+
+/* Beispiel für den gesamten Body */
+body {
+  /* 1. Firefox & neue Standard-Unterstützung */
+  scrollbar-color: #2b2b58 #001031; 
+  scrollbar-width: thin; 
+}
+
+/* 2. WebKit-Browser (Chrome, Safari, Edge) */
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #001031;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #2b2b58;
+  border-radius: 5px; /* Optional: leicht abgerundet */
+}
+
+/*Navigation Toggle fix*/
+.mobile-nav-button__icon,.mobile-nav-button__icon:before,.mobile-nav-button__icon:after
+{
+    border-top: solid 3px #fff !important;
+}
+
+.header-nav {
+ padding-inline-end:var(--sp);border-block-start: solid transparent calc(var(--sp3) + var(--drupal-displace-offset-top, 0px)) !important;
+ }
+.sticky-header-toggle
+{ background-color: #3f426d;}
+.header-nav
+    {
+        background-color:transparent !important;
+    }
+.primary-nav__menu-link
+{color: #fff !important;}
+
+ .breadcrumb::after {
+    background: linear-gradient(to left, transparent 0%,transparent 100%) !important;
+    }
+
+.mobile-nav-button__icon {
+  position: relative;
+  width: 20px;
+  height: 2px;
+  background-color: currentColor; /* Reverted to currentColor */
+  transition: background-color 0.3s ease-in-out;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: currentColor; /* Reverted to currentColor */
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &::before {
+    top: -6px;
+  }
+
+  &::after {
+    top: 6px;
+  }
+}
+
+
+.breadcrumb__link {
+    color:#a6a8d1 !important;
+}
+.site-branding__slogan
+    {color: #989bcf !important;}
+
+.site-footer {
+        border-inline-start: solid #1e283c;
+        background-color: #1e283c;
+    }
+        body:not(.is-always-mobile-nav) .site-footer {
+        border-inline-start: solid #1e283c;
+    }
