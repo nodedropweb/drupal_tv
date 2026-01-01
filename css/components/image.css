@@ -7,11 +7,11 @@
     initial-value: -90deg;
 }
 
-@property --clr-1 { syntax: "<color>"; inherits: true; initial-value: #ff0000; }
-@property --clr-2 { syntax: "<color>"; inherits: true; initial-value: #ffff00; }
-@property --clr-3 { syntax: "<color>"; inherits: true; initial-value: #00ff00; }
-@property --clr-4 { syntax: "<color>"; inherits: true; initial-value: #0000ff; }
-@property --clr-5 { syntax: "<color>"; inherits: true; initial-value: #ff00ff; }
+@property --clr-1 { syntax: "<color>"; inherits: true; initial-value: var(--color-ff0000); }
+@property --clr-2 { syntax: "<color>"; inherits: true; initial-value: var(--color-ffff00); }
+@property --clr-3 { syntax: "<color>"; inherits: true; initial-value: var(--color-00ff00); }
+@property --clr-4 { syntax: "<color>"; inherits: true; initial-value: var(--color-0000ff); }
+@property --clr-5 { syntax: "<color>"; inherits: true; initial-value: var(--color-ff00ff); }
 
 @layer general-styling {
     * {
@@ -27,7 +27,7 @@
         margin: 0;
         padding: 4rem;
         overflow-x: clip;
-        background-color: #0f172a;
+        background-color: var(--color-0f172a);
         min-height: 100vh;
         display: flex;
         flex-direction: column;
@@ -50,7 +50,7 @@
     --border-width: 3px;
     --glow-size: 1.5rem;
     --glow-intensity: 0.25;
-    --surface: #0f172a;
+    --surface: var(--color-0f172a);
 }
 
 /* --- NEU: GLOYING IMAGE COMPONENT --- */

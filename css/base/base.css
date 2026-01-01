@@ -2,13 +2,79 @@
 :root {
   /* Hier kommen die globalen Variablen rein */
 
---color--primary: #fff;
---ck-content-font-color:#dde1ff;
---text: #dde1ff;
---card-subtitle: #ffe4c4;
---color-text-neutral-loud:#dde1ff;
---color-text-primary-medium:  #faebd7 !important;
---color-text-neutral-loud: #FBBF24 !important;
+--color--primary: var(--color-fff);
+--ck-content-font-color:var(--color-dde1ff);
+--text: var(--color-dde1ff);
+--card-subtitle: var(--color-ffe4c4);
+--color-text-neutral-loud:var(--color-dde1ff);
+--color-text-primary-medium:  var(--color-faebd7) !important;
+--color-text-neutral-loud: var(--color-FBBF24) !important;
+
+  /* Generated Color Variables */
+  --color-rgba-255-255-255-0-1: rgba(255, 255, 255, 0.1);
+  --color-rgba-16-185-129-0-5: rgba(16, 185, 129, 0.5);
+  --color-rgba-16-185-129-0-6: rgba(16, 185, 129, 0.6);
+  --color-rgba-16-185-129-0-1: rgba(16, 185, 129, 0.1);
+  --color-rgba-6-182-212-0-6: rgba(6, 182, 212, 0.6);
+  --color-rgba-0-0-0-0-10: rgba(0, 0, 0, 0.10);
+  --color-rgba-43-43-88-1: rgba(43, 43, 88, 1);
+  --color-rgba-24-24-49-1: rgba(24, 24, 49, 1);
+  --color-rgba-0-0-0-0-3: rgba(0, 0, 0, 0.3);
+  --color-rgba-0-0-0-0-5: rgba(0, 0, 0, 0.5);
+  --color-rgba-0-0-0-1: rgba(0, 0, 0, 1);
+  --color-rgb-162-162-255: rgb(162 162 255);
+  --color-rgb-102-191-237: rgb(102 191 237);
+  --color-198cc5f7: #198cc5f7;
+  --color-ffdd0069: #ffdd0069;
+  --color-e3d3fff3: #e3d3fff3;
+  --color-0000001c: #0000001c;
+  --color-FBBF24: #FBBF24;
+  --color-001031: #001031;
+  --color-ffb359: #ffb359;
+  --color-9a9cff: #9a9cff;
+  --color-ffe4c4: #ffe4c4;
+  --color-181831: #181831;
+  --color-4bc1f0: #4bc1f0;
+  --color-0f162f: #0f162f;
+  --color-1e1437: #1e1437;
+  --color-000000: #000000;
+  --color-f1f5f9: #f1f5f9;
+  --color-00ff00: #00ff00;
+  --color-10b981: #10b981;
+  --color-2a2b55: #2a2b55;
+  --color-ff0000: #ff0000;
+  --color-0000ff: #0000ff;
+  --color-cbd5e1: #cbd5e1;
+  --color-404485: #404485;
+  --color-111219: #111219;
+  --color-131212: #131212;
+  --color-150c25: #150c25;
+  --color-989bcf: #989bcf;
+  --color-579aea: #579aea;
+  --color-ffff00: #ffff00;
+  --color-673AB7: #673AB7;
+  --color-06b6d4: #06b6d4;
+  --color-1e283c: #1e283c;
+  --color-faebd7: #faebd7;
+  --color-ff430a: #ff430a;
+  --color-2b2b58: #2b2b58;
+  --color-b3b2b2: #b3b2b2;
+  --color-deb887: #deb887;
+  --color-373a87: #373a87;
+  --color-f0f8ff: #f0f8ff;
+  --color-0f172a: #0f172a;
+  --color-e2e8f0: #e2e8f0;
+  --color-a6a8d1: #a6a8d1;
+  --color-232151: #232151;
+  --color-e7e7e7: #e7e7e7;
+  --color-242053: #242053;
+  --color-1c1235: #1c1235;
+  --color-2B2B58: #2B2B58;
+  --color-3f426d: #3f426d;
+  --color-dde1ff: #dde1ff;
+  --color-5d6499: #5d6499;
+  --color-ff00ff: #ff00ff;
+  --color-fff: #fff;
 }
 
 
@@ -22,7 +88,7 @@ body {
 /* Beispiel für den gesamten Body */
 body {
   /* 1. Firefox & neue Standard-Unterstützung */
-  scrollbar-color: #2b2b58 #001031; 
+  scrollbar-color: var(--color-2b2b58) var(--color-001031);
   scrollbar-width: thin; 
 }
 
@@ -32,54 +98,54 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: #001031;
+  background: var(--color-001031);
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #2b2b58;
+  background: var(--color-2b2b58);
   border-radius: 5px; /* Optional: leicht abgerundet */
 }
 
 /*Navigation Toggle fix*/
 .mobile-nav-button__icon,.mobile-nav-button__icon:before,.mobile-nav-button__icon:after
 {
-    border-top: solid 3px #fff !important;
+    border-top: solid 3px var(--color-fff) !important;
 }
 
 .header-nav {
  padding-inline-end:var(--sp);border-block-start: solid transparent calc(var(--sp3) + var(--drupal-displace-offset-top, 0px)) !important;
  }
 .sticky-header-toggle
-{ background-color: #3f426d;}
+{ background-color: var(--color-3f426d);}
 .header-nav
     {
         background-color:transparent !important;
     }
 .primary-nav__menu-link
-{color: #fff !important;}
+{color: var(--color-fff) !important;}
 
 .breadcrumb__link {
-    color:#a6a8d1 !important;
+    color:var(--color-a6a8d1) !important;
 }
 .site-branding__slogan
-    {color: #989bcf !important;}
+    {color: var(--color-989bcf) !important;}
 
 .site-footer {
-        border-inline-start: solid #1e283c;
-        background-color: #1e283c;
+        border-inline-start: solid var(--color-1e283c);
+        background-color: var(--color-1e283c);
     }
         body:not(.is-always-mobile-nav) .site-footer {
-        border-inline-start: solid #1e283c;
+        border-inline-start: solid var(--color-1e283c);
     }
 
 
 
 .node--view-mode-full .field--tags {
-    background: #232151  !important;}
+    background: var(--color-232151)  !important;}
 
 
 .secondary-nav__menu-link
-{color:#deb887 !important;}
+{color:var(--color-deb887) !important;}
 
 .breadcrumb__item
-{color: rgb(102 191 237) !important;}
+{color: var(--color-rgb-102-191-237) !important;}

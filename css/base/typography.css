@@ -81,5 +81,5 @@
 .h5,
 .h6,
 tbody, 
-.field {color:#dde1ff !important;}
+.field {color:var(--color-dde1ff) !important;}
 
