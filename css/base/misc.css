@@ -13,12 +13,12 @@
 
 .header-nav, span.button, a.button, body, .site-header__initial, .site-header__inner, .social-bar, #header, .page-wrapper, input, [type="color"],[type="date"],[type="datetime-local"],[type="email"],[type="file"],[type="month"],[type="number"],[type="password"],[type="search"],[type="tel"],[type="text"],[type="time"],[type="url"],[type="week"],textarea  {
  
-background: -webkit-linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, #181831 35%, #2b2b58 91%) !important;
-background: -moz-linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(24, 24, 49, 1) 35%, rgba(43, 43, 88, 1) 91%) !important;
-background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(24, 24, 49, 1) 35%, rgba(43, 43, 88, 1) 91%) !important;
+background: -webkit-linear-gradient(90deg,var(--color-rgba-0-0-0-1) 0%, var(--color-181831) 35%, var(--color-2b2b58) 91%) !important;
+background: -moz-linear-gradient(90deg,var(--color-rgba-0-0-0-1) 0%, var(--color-rgba-24-24-49-1) 35%, var(--color-rgba-43-43-88-1) 91%) !important;
+background: linear-gradient(90deg,var(--color-rgba-0-0-0-1) 0%, var(--color-rgba-24-24-49-1) 35%, var(--color-rgba-43-43-88-1) 91%) !important;
 filter: progid:DXImageTransform.Microsoft.gradient(
-  startColorstr="#000000",
-  endColorstr="#2B2B58",
+  startColorstr="var(--color-000000)",
+  endColorstr="var(--color-2B2B58)",
   GradientType=1
 );
 border: 0 !important;
@@ -42,8 +42,8 @@ border: 0 !important;
     left: 0;
     right: 0;
     margin: auto;
-    box-shadow: 0px 6px 58px 2px #111219;
-    // background-color: #131212 ;
+    box-shadow: 0px 6px 58px 2px var(--color-111219);
+    // background-color: var(--color-131212) ;
 }
 
 .ctawrapper {
@@ -60,7 +60,7 @@ border: 0 !important;
 
   .ctah1 {
         text-align: right;
-        color: #e7e7e7;
+        color: var(--color-e7e7e7);
         font-size: 2rem;
         margin-top: 2rem;
         // padding: 3rem;
@@ -72,19 +72,19 @@ border: 0 !important;
         border: none;
         display: block;
         margin-right: 0;
-        background-color: #ff430a;
+        background-color: var(--color-ff430a);
     }
 
 .ctap {
         padding-left: 3rem;
         text-align: justify;     
-        color: #b3b2b2;
+        color: var(--color-b3b2b2);
     }
 .ctabutton {
         background-color: transparent;
-        border: 2px solid #ff430a;
+        border: 2px solid var(--color-ff430a);
         padding: 10px;
-        color: #ff430a;
+        color: var(--color-ff430a);
         font-size: 1.5rem;
         border-radius: 3px;
         float: right;

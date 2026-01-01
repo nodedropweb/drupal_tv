@@ -10,9 +10,9 @@
 .tabs {
 
     --tabs-background-color: transparent !important;
-    --tabs-background-color-hover:#1e1437 !important;
-    --tabs-text-color-active:#fff !important;
-    --tabs-text-color: rgb(162 162 255) !important;
+    --tabs-background-color-hover:var(--color-1e1437) !important;
+    --tabs-text-color-active:var(--color-fff) !important;
+    --tabs-text-color: var(--color-rgb-162-162-255) !important;
     --tabs-border-width: 0px !important;
 }
 

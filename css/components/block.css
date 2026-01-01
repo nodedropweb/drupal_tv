@@ -13,7 +13,7 @@ h2.block__title {
   }
 }
 
-#block-drupaltv-page-title > h1, .card__title {color: #4bc1f0 !important;}
+#block-drupaltv-page-title > h1, .card__title {color: var(--color-4bc1f0) !important;}
 
 #block-drupaltv-footer-menu > ul > li > a
 
@@ -29,11 +29,11 @@ h2.block__title{
 #block-drupaltv-footer-menu > ul > li > a {display: inline-flex;}
 
 
-a:hover.secondary-nav__menu-link {color:#ffe4c4}
+a:hover.secondary-nav__menu-link {color:var(--color-ffe4c4)}
 
 .chat-container
-{background:#2a2b55 !important;}
+{background:var(--color-2a2b55) !important;}
 
 .page-title {
-    color: #4bc1f0 !important;
+    color: var(--color-4bc1f0) !important;
 }

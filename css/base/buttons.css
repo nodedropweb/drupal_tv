@@ -7,7 +7,7 @@
 .button--link[class] {
   border: 0;
   padding: 0;
-color: #9a9cff;
+color: var(--color-9a9cff);
 
   &:hover {
     border: 0;
@@ -19,7 +19,7 @@ bottom: 26px;
 right: 75px;
 }
 .unishare-button {
-background-color: #579aea;
+background-color: var(--color-579aea);
 }
 
 
@@ -63,7 +63,7 @@ background-color: #579aea;
 
   &:hover {
     border: 0;
-    color: #5d6499 !important;
+    color: var(--color-5d6499) !important;
   }
 }
 
