@@ -152,9 +152,10 @@ body::-webkit-scrollbar-thumb {
 
 /* Logo Navigation Adjustment */
 .site-branding__logo img {
-  height: 40px !important; /* Force height as requested */
-  width: auto;
-  max-height: none !important; /* Override potential constraints */
+  height: auto !important; /* Allow height to scale based on width */
+  width: 40px !important;  /* Set width to 40px for better visibility */
+  max-height: none !important;
+  max-width: none !important;
   transition: transform 0.3s ease-in-out;
 }
 
