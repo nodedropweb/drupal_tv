@@ -149,15 +149,3 @@ body::-webkit-scrollbar-thumb {
 
 .breadcrumb__item
 {color: var(--color-rgb-102-191-237) !important;}
-
-/* Logo Navigation Adjustment */
-.site-branding__logo img {
-  height: 40px !important; /* Force height as requested */
-  width: auto;
-  max-height: none !important; /* Override potential constraints */
-  transition: transform 0.3s ease-in-out;
-}
-
-.site-branding__logo:hover img {
-  transform: scale(1.1);
-}
